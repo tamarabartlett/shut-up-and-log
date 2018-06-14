@@ -1,0 +1,49 @@
+-Max Page
+  - Max altitude
+  - Max jumps in a day
+
+- Add tests: use this https://www.toptal.com/react/how-react-components-make-ui-testing-easy
+
+- scss... check out readme
+
+
+- NAME THE APP:
+
+Log
+  Record
+  Diary
+  Wood
+  Journal
+  History
+  Notes
+  Details
+
+Book
+  Bound
+  Paper
+  Spiral
+  Ledger
+  Heavy
+  Library
+
+Jump
+  Leap
+  Fall
+  Hop
+  Frolic
+  Land
+
+Skydive
+  Planes
+  Sky
+  Skyjive
+  Hopnpop
+  Funjumpers
+  Upjumpers
+  Radical
+  Freefall
+  Vertical
+  Terminal Velocity
+  Freefalling
+  
+Data
