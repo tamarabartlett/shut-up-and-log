@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: linear-gradient(45deg, #0ad3ff, #02a9ea);
+  box-shadow: 0px 3px 15px #222;
+  color: #222;
+}
+
+.Logo {
+  display: flex;
+  align-items:center;
+  text-align: left;
+
+}
+
+.App-title {
+  display: inline;
+  font-size: 1.5em;
+}
+
+.Logo-Img {
+  display: inline;
+  margin: .5em .5em .5em .5em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.Last-Jump {
+  font-family:"Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 1em 10%;
+  border-radius: 3em;
+  background: linear-gradient(45deg, #DD3B76, #f28b4e);
+}
+
+.Last-Jump-Data {
+  font-style: italic;
+}
+
+.Panel-Header {
+  background-color: #C02F5A;
+  box-shadow: 0px 3px 15px #222;
+}
+
+.Panel {
+  background-color: rgba(255, 252, 49, 1);
+  border: 1px black solid;
+  box-shadow: 0px 3px 15px #222;
+}
+.Center-Chart {
+  margin:auto;
+}
