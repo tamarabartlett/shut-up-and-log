@@ -17,14 +17,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jasmine",
-    "eject": "react-scripts eject",
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "jasmine": "^3.1.0",
     "concurrently": "^3.5.0"
   }
 }

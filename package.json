@@ -1,13 +1,12 @@
 {
   "name": "shut-up-and-log",
   "version": "1.0.0",
+  "main": "server.js",
   "repository": "None Yet",
   "description": "A graphical way to see your skydives",
   "license": "MIT",
   "scripts": {
-    "client": "cd client && npm start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
