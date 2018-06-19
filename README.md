@@ -1,3 +1,5 @@
+git push heroku master
+
 npm run 'script-name'
 
 ## Stuff that was in my old package.json
