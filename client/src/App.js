@@ -15,14 +15,14 @@ class App extends Component {
     this.callApi()
       .then(res => {
         this.setState({
-          lastJump: res.jumps[res.jumps.length-1],
-          jumps: res.jumps
+          lastJump: res.data[res.data.length-1],
+          jumps: res.data
          })
       }).catch(err => console.log(err));
   }
 
   callApi = async () => {
-    const response = await fetch('/api/jumps');
+    const response = await fetch('/api/skydives');
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);

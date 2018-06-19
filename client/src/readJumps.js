@@ -16,7 +16,7 @@ function ReadJumpsByMonth(jumps) {
 
   if (jumps){
     jumps.forEach((jump) => {
-      let month = moment(jump['date'], 'MM/DD/YYYY').month()
+      let month = moment(jump['jump_date'], 'YYYY-MM-DD').month()
       let monthName = getMonthName(month)
 
       jumpsByMonth[monthName] = (jumpsByMonth[monthName] || 0) + 1;

@@ -76,9 +76,6 @@ class BarGraphPanel extends Component {
   // }
 
   render() {
-    console.log("DATER");
-    console.log(this.props.data);
-
     return (
       <ExpansionPanel>
         <ExpansionPanelSummary className={this.props.classes.panel} expandIcon={<ExpandMoreIcon />}>
