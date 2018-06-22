@@ -1,5 +1,5 @@
 {
-  "name": "chart-practice",
+  "name": "shut-up-and-log-ui",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000/",
