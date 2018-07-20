@@ -6,31 +6,33 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Derp from "./Derp";
+import Colorbarf from "./Colorbarf";
 import JumpGraphs from "./JumpGraphs";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-            <h1 className="App-title">Shut Up & Log</h1>
-        </header>
-
+        <div className="appHeader">
+          <header className="appTitleBar">
+              <h1 className="appTitle">Shut Up & Log</h1>
+          </header>
 
           <HashRouter>
             <div>
-            <ul className="header">
-              <li><NavLink to="/derp">Derp</NavLink></li>
-              <li><NavLink to="/jumpGraphs">Jumps</NavLink></li>
-            </ul>
+              <div className="menuBar">
+                  <div className="menuItem"><NavLink exact to="/">Jumps</NavLink></div>
+                  <div className="menuItem"><NavLink to="/colorbarf">#colorbarf</NavLink></div>
+              </div>
 
-            <div className="content">
-              <Route path="/derp" component={Derp}/>
-              <Route path="/jumpGraphs" component={JumpGraphs}/>
+              <div className="content">
+                <Route exact path="/" component={JumpGraphs}/>
+                <Route path="/jumps" component={JumpGraphs}/>
+                <Route path="/colorbarf" component={Colorbarf}/>
+              </div>
             </div>
-          </div>
-        </HashRouter>
+          </HashRouter>
+        </div>
       </div>
     );
   }

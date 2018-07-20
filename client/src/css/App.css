@@ -5,18 +5,31 @@
   flex-direction: column;
 }
 
-.App-header {
-  background: linear-gradient(45deg, #0ad3ff, #02a9ea);
-  box-shadow: 0px 3px 15px #222;
+.appHeader {
   color: #222;
   text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  box-shadow: 0px .25em 2em;
 }
 
-.App-title {
+.appTitleBar {
+  background: linear-gradient(45deg, #0ad3ff, #02a9ea);
+}
+
+.appTitle {
   display: inline;
-  font-family: 'Permanent Marker', cursive;
   font-size: 2em;
   padding-left: .5em;
+}
+
+.menuBar {
+  background: linear-gradient(45deg, rgba(92, 246, 74, 1), #29bf12);
+  padding-left: .5em;
+}
+
+.menuItem {
+  padding: 0 .5em;
+  display: inline;
 }
 
 .Last-Jump {
