@@ -9,25 +9,14 @@
   background: linear-gradient(45deg, #0ad3ff, #02a9ea);
   box-shadow: 0px 3px 15px #222;
   color: #222;
-}
-
-.Logo {
-  display: flex;
-  align-items:center;
   text-align: left;
-
 }
 
 .App-title {
   display: inline;
-  font-size: 1.5em;
-}
-
-.Logo-Img {
-  display: inline;
-  margin: .5em .5em .5em .5em;
-  height: 2.5em;
-  width: 2.5em;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  padding-left: .5em;
 }
 
 .Last-Jump {

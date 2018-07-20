@@ -6,7 +6,15 @@ import AddIcon from '@material-ui/icons/Add';
 import Graphs from './Graphs.js';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import logo from './img/favicon.png'
+import houseIcon from './img/house-32.png'
+
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import Derp from "./Derp";
+import Blerp from "./Blerp";
 
 
 const styles = () => ({
@@ -69,21 +77,32 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <div className="Logo">
-            <img className="Logo-Img" src={logo} alt="Colorbarf Logo here"/>
             <h1 className="App-title">Shut Up & Log</h1>
-          </div>
         </header>
 
         <LastJump jump={this.state.lastJump}/>
-        <Graphs jumps={this.state.jumps}/>
+        {/* <Graphs jumps={this.state.jumps}/>
           <Button
             variant="fab"
             aria-label="add"
             className={classes.fab}
             onClick={this.addJump}>
             <AddIcon />
-          </Button>
+          </Button> */}
+
+          <HashRouter>
+<div>
+          <ul className="header">
+            <li><NavLink to="/derp">Derp</NavLink></li>
+            <li><NavLink to="/blerp">Blerp</NavLink></li>
+          </ul>
+
+          <div className="content">
+            <Route path="/derp" component={Derp}/>
+            <Route path="/blerp" component={Blerp}/>
+          </div>
+</div>
+        </HashRouter>
       </div>
     );
   }
