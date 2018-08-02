@@ -1,20 +1,6 @@
 import React, { Component } from "react";
 import LastJump from './LastJump.js';
-import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
 import Graphs from './Graphs.js';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-
-const styles = () => ({
-  fab: {
-    position: 'absolute',
-    bottom: '3em',
-    right: '3em',
-    backgroundColor: '#0ad3ff'
-  }
-});
-
 
 class JumpGraphs extends Component {
   state = {
@@ -61,27 +47,13 @@ class JumpGraphs extends Component {
   }
 
   render() {
-    const { classes } = this.props;
-
     return (
       <div>
         <LastJump jump={this.state.lastJump}/>
         <Graphs jumps={this.state.jumps}/>
-          <Button
-            variant="fab"
-            aria-label="add"
-            className={classes.fab}
-            onClick={this.addJump}>
-            <AddIcon />
-          </Button>
       </div>
     );
   }
 }
 
-
-JumpGraphs.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(JumpGraphs);
+export default JumpGraphs;

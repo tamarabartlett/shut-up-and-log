@@ -1,0 +1,5 @@
+- Keep fonts up to date skyfonts https://skyfonts.com/
+- Prepopulate Date with Today
+- Send jump input to database
+- Dropdown for recent dzs
+- Fix font offline on localhost:5000
